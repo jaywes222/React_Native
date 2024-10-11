@@ -3,6 +3,7 @@ import { useState } from 'react';
 import { ImageBackground, SafeAreaView, StyleSheet } from 'react-native';
 import GameScreen from './screens/GameScreen';
 import StartGameScreen from './screens/StartGameScreen';
+import Colors from './constants/colors';
 
 export default function App() {
 	const [userNumber, setUserNumber] = useState();
@@ -19,7 +20,7 @@ export default function App() {
 
 	return (
 		<LinearGradient
-			colors={['#4e0329', '#ddb52f']}
+			colors={[Colors.primary500, Colors.accent500]}
 			style={styles.rootScreen}
 		>
 			<ImageBackground
